@@ -153,7 +153,7 @@
   }
   
 .photos img{
-	margin:30px;
+	  margin:30px;
     filter: brightness(40%);
     width:auto;
     height:auto;
@@ -163,7 +163,7 @@
   
 .photos > h3 {
     color:white;
-    margin-top:-20vh;
+    margin-top:-25vh;
     font-weight: 400;
     font-size: 32px;
     margin-left:40px;
@@ -204,8 +204,8 @@
     flex-direction: row;
     position: relative;
     z-index: 1;
-	margin-top: 25vh;
-	height: 500px;
+	  margin-top: 25vh;
+	  height: 500px;
     background: linear-gradient(180deg, #EB5757 15%, #D59152 85%);
     width:100vw;
 }
