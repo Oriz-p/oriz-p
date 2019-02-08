@@ -6,6 +6,7 @@
 .top-body {
     position:relative;
     background: linear-gradient(180deg, #EB5757 15%, #D59152 85%);
+    width:100vw;
   }
   
 .header {
@@ -18,21 +19,20 @@
   }
   
 .brand {
-    margin-left: 10px;
+    margin-left:2.5vw;
     margin-top:15px;
-    
-    
   }
   
 .brand img {
     height: 30px;
     align-self: center;
-    
+	margin-right:10px;
+	vertical-align:middle;
   }
   
 .header > nav > ul >li {
     display: inline-block;
-    padding: 0 15px;
+    margin: 0 15px;
     font-family: proxima nova;
     margin-top:20px;
   }
@@ -51,12 +51,29 @@
     font-weight: 500;
     color:white;
     font-size:13px;
- 
-    
   }
   
-.main-text >p{
-    margin-top: 50vh;
+@media screen and (max-width:600px){
+	.header{
+		font-size:12px;
+	}
+	.login{
+		font-size:12px;
+		width:120px;
+	}
+}
+
+@media screen and (max-width:475px){
+	.header > nav > ul >li {
+    display:block;
+    text-align:center;
+  }
+  .login{
+  	margin-bottom:auto;
+  }
+}
+ .main-text >p{
+    margin-top: 15%;
     text-align: center;
     font-size: 64px;
     font-family:catamaran;
@@ -64,14 +81,23 @@
     color: #ffffff;
     
   }
-  
-.main-text > label> input {
-    font-family: catamaran;
-    font-size: 20px;
-    width:500px;
-    text-align:center;
-    border-radius: 30px;
+
+
+  @media screen and (max-width:319px){
+  	.main-text > p{
+  		font-size: 48px;
+  	}
+
+.photos img{
+	margin:10px;
+    width:auto;
+    height:auto;
+    max-width:200px;
+    max-height:300px;
   }
+
+  }
+  
   
 .label {
     display:blocks;
@@ -84,46 +110,55 @@
   }
   
 .main-text > .label > input {
-    position:absolute;
-    width: 350px;
+    position:relative;
+    width:50vw;
     height: 40px;
     border-radius: 25px;
     text-align: center;
-    border:3px solid #F2994A;
+    border:2px solid #F2994A;
     font-family: catamaran;
     font-size: 20px;
-    margin-left: -180px;
+    top:42px;
   }
   
 .About h3 {
     text-align:center;
-    margin-top:  40vh;
+    margin-top:  12vh;
     letter-spacing: 10px;
     font-family: Catamaran;
     color: #C3C0C0;
   }
   
-  
+.About{
+    width:70.8%;
+    margin:0 auto;
+}
+
+
 .About p {
     font-family: Catamaran;
     font-weight: 500;
     font-size: 24px;
     text-align: center;
-    padding:30px 200px 200px;  
+    margin:8vh 0;  
     
   }
 .albums{
     display:flex;
     flex: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:center;
     font-family: Catamaran;
+    width:100vw;
   }
   
 .photos img{
-    padding:25px 15px;
+	margin:30px;
     filter: brightness(40%);
-    
+    width:auto;
+    height:auto;
+    max-width:300px;
+    max-height:400px;
   }
   
 .photos > h3 {
@@ -133,6 +168,7 @@
     font-size: 32px;
     margin-left:40px;
     line-height:50px;
+    filter: brightness(100%);
   }
   
 .photos  > p{
@@ -140,15 +176,17 @@
     font-size: 18px;
     font-weight:400;
     margin-left:40px;
+    filter: brightness(100%);
   }
   
   
 .see-more {
-    position:absolute;
+    position:relative;
     text-transform: uppercase;
-    margin-top: 10vh;
+    left:33%;
+    margin: 10vh auto;
     height:50px;
-    width:280px;
+    width:150px;
     border-radius:30px;
     border: 2px solid #E36F55;
     background-color:white;
@@ -157,9 +195,6 @@
     font-size: 18px;
     letter-spacing: 0.1em;
     color: #E36F55;
-    box-sizing: border-box;
-    margin-left: 40vw;
-
   }
 
 
@@ -172,13 +207,14 @@
 	margin-top: 25vh;
 	height: 500px;
     background: linear-gradient(180deg, #EB5757 15%, #D59152 85%);
-    
+    width:100vw;
 }
 
 .end-page >img {
     margin-left:auto;
     clip-path: polygon(23% 0, 100% 0, 100% 100%, 8% 100%);
     z-index: 2;
+    width:67%;
 }
 
 .end-page > p {
@@ -187,18 +223,18 @@
 	font-weight: 600;
 	font-size: 18px;
 	letter-spacing: 0.1em;
-	color: #FEBE61;
+	color: #f5cf98;
 	text-transform: uppercase;
-	margin-left: 170px;
-    padding-top: 15vh;
-    z-index: 3;
+	margin-left:40vw ;
+    margin-top: 15vh;
+    z-index: 2;
 }
 
 .end-page > h3 {
     position: absolute;
 	font-family: Catamaran;
 	font-weight: 700;
-	font-size: 72px;
+	font-size: 300%;
 	color:white;
     margin-top: 170px;
     margin-left: 11vw;
@@ -208,9 +244,13 @@
 footer{
     display:flex;
     justify-content: space-between;
-    padding:15px;
     font-family: Catamaran;
 	font-weight: 600;
 	font-size: 14px;
 	color: #A9A9A9;
+	width:100vw;
 }    
+
+footer p{
+	margin:0 5px;
+}
